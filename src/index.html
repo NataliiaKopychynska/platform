@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search IMG</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
+  </head>
+  <body>
+    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+
+    <main>
+      <form id="searchForm" class="feedback-form">
+        <label class="label-form">
+          <input
+            id="searchInput"
+            class="input-form"
+            type="text"
+            name="text"
+            autofocus
+            placeholder="Search images..."
+          />
+        </label>
+
+        <button type="submit" class="button">Search</button>
+      </form>
+      <div class="loading-indicator" style="display: none">
+        Loading images, please wait...
+      </div>
+      <div class="gallery"></div>
+    </main>
+
+    <load src="./partials/footer.html" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/pixabay-api.js"></script>
+    <script type="module" src="./js/render-function.js"></script>
+  </body>
+</html>
