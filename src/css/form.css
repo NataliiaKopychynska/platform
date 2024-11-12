@@ -41,7 +41,7 @@ input {
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
-  width: 95px;
+  /* width: 95px; */
   height: 40px;
   background: #4e75ff;
   font-weight: 500;
@@ -50,6 +50,7 @@ input {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  margin: 0 auto;
 }
 
 .button:hover {

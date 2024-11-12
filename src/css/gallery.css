@@ -72,3 +72,12 @@
   height: 208px; */
   transform: scale(1.05);
 }
+
+.load-more-hiden {
+  opacity: 0;
+}
+
+.btn-load-more {
+  margin-top: 24px;
+  margin-bottom: 80px;
+}
