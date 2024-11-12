@@ -93,6 +93,11 @@ export function renderImages(images, clearGallery = false) {
   });
 }
 
+// Clear the gallery
+export function clearGallery() {
+  document.querySelector('.gallery').innerHTML = '';
+}
+
 export function renderError(message) {
   iziToast.error({
     title: 'Error',
@@ -102,18 +107,31 @@ export function renderError(message) {
   });
 }
 
-export function showLoadingIndicator(show) {
-  const loadingIndicator = document.querySelector('.loading-indicator');
-  loadingIndicator.style.display = show ? 'block' : 'none';
+// export function showLoadingIndicator(show) {
+//   const loadingIndicator = document.querySelector('.loading-indicator');
+//   loadingIndicator.style.display = show ? 'block' : 'none';
+// }
+export function showLoadingIndicator() {
+  document.querySelector('.loading-indicator').style.display = 'block';
+}
+
+export function hideLoadingIndicator() {
+  document.querySelector('.loading-indicator').style.display = 'none';
 }
 
 export function showLoadMoreButton() {
   const loadMoreButton = document.querySelector('.js-load-more');
   loadMoreButton.classList.remove('load-more-hiden');
+
+  // const EndLoadText = document.querySelector('.no-more-images-message');
+  // EndLoadText.classList.classList.add('load-more-hiden');
 }
 
 // Функція для приховування кнопки "Load more"
 export function hideLoadMoreButton() {
   const loadMoreButton = document.querySelector('.js-load-more');
   loadMoreButton.classList.add('load-more-hiden');
+
+  // const EndLoadText = document.querySelector('.no-more-images-message');
+  // EndLoadText.classList.classList.remove('load-more-hiden');
 }

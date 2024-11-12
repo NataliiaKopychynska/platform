@@ -81,3 +81,10 @@
   margin-top: 24px;
   margin-bottom: 80px;
 }
+
+.loading-indicator {
+  display: flex;
+  justify-content: center;
+
+  display: none;
+}

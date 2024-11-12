@@ -36,9 +36,7 @@
 
         <button type="submit" class="button">Search</button>
       </form>
-      <div class="loading-indicator" style="display: none">
-        Loading images, please wait...
-      </div>
+      <div class="loading-indicator">Loading images, please wait...</div>
       <div id="app">
         <ul class="gallery"></ul>
 
@@ -53,6 +51,12 @@
           <button class="js-load-more button btn-load-more load-more-hiden">
             Load more
           </button>
+          <p
+            class="no-more-images-message load-more-hiden"
+            style="display: none"
+          >
+            No more images available
+          </p>
         </div>
       </div>
     </main>

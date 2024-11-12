@@ -6,6 +6,9 @@ import {
   renderError,
   showLoadMoreButton,
   hideLoadMoreButton,
+  showLoadingIndicator,
+  hideLoadingIndicator,
+  clearGallery,
 } from './js/render-function';
 
 const searchForm = document.getElementById('searchForm');
@@ -54,6 +57,9 @@ searchForm.addEventListener('submit', async e => {
   //     'An error occurred while fetching images. Please try again later.'
   //   );
   // }
+  clearGallery(); // Clear gallery for new search
+  showLoadingIndicator(); // Show loading indicator
+
   try {
     // Fetch the first set of images
     const images = await fetchImages(searchQuery, currentPage);
@@ -78,6 +84,8 @@ searchForm.addEventListener('submit', async e => {
     renderError(
       'An error occurred while fetching images. Please try again later.'
     );
+  } finally {
+    hideLoadingIndicator(); // Hide loading indicator
   }
 
   searchInput.value = ''; // Очищення поля вводу після пошуку
