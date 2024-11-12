@@ -19,7 +19,7 @@
     <script type="module" crossorigin src="/goit-js-hw-1-12/index.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-1-12/assets/vendor-Kt0AZ5QJ.js">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-1-12/assets/vendor-DkczhqSJ.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-1-12/assets/styles-CWJB2d0z.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-1-12/assets/styles-CJCtrhHy.css">
   </head>
   <body>
     <header class="header">
@@ -58,9 +58,7 @@
 
         <button type="submit" class="button">Search</button>
       </form>
-      <div class="loading-indicator" style="display: none">
-        Loading images, please wait...
-      </div>
+      <div class="loading-indicator">Loading images, please wait...</div>
       <div id="app">
         <ul class="gallery"></ul>
 
@@ -75,6 +73,12 @@
           <button class="js-load-more button btn-load-more load-more-hiden">
             Load more
           </button>
+          <p
+            class="no-more-images-message load-more-hiden"
+            style="display: none"
+          >
+            No more images available
+          </p>
         </div>
       </div>
     </main>
