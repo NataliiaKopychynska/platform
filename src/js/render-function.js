@@ -112,7 +112,7 @@ export function renderError(message) {
 //   loadingIndicator.style.display = show ? 'block' : 'none';
 // }
 export function showLoadingIndicator() {
-  document.querySelector('.loading-indicator').style.display = 'block';
+  document.querySelector('.loading-indicator').style.display = 'flex';
 }
 
 export function hideLoadingIndicator() {
