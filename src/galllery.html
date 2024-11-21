@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <load src="./partials/manu.html" />
+    <main>
+      <div class="crumbs">
+        <a href="./index.html" class="title-crmbs disabled-crumbs">Home</a>
+        <svg class="crbs-icon">
+          <use href="./img/icon-platform.svg#icon-arrow"></use>
+        </svg>
+        <a href="" class="title-crmbs activ-crambs">Gallery</a>
+      </div>
+      <h1 class="herou-main">Your inspiration</h1>
+      <form id="searchForm" class="feedback-form">
+        <label class="label-form">
+          <input
+            id="searchInput"
+            class="input-form"
+            type="text"
+            name="text"
+            autofocus
+            placeholder="Search images..."
+          />
+        </label>
+
+        <button type="submit" class="button">Search</button>
+      </form>
+      <div class="loading-indicator">Loading images, please wait...</div>
+      <div id="app">
+        <ul class="gallery"></ul>
+
+        <!-- <button
+          id="load-more"
+          style="display: none"
+          class="js-load-more button load-more-hiden"
+        >
+          Load more
+        </button> -->
+        <div class="button-container">
+          <button class="js-load-more button btn-load-more load-more-hiden">
+            Load more
+          </button>
+          <p
+            class="no-more-images-message load-more-hiden"
+            style="display: none"
+          >
+            No more images available
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <load src="./partials/footer.html" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+    <script type="module" src="./js/gallary/main.js"></script>
+    <script type="module" src="./js/gallary/pixabay-api.js"></script>
+    <script type="module" src="./js/gallary/render-function.js"></script>
+  </body>
+</html>

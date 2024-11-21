@@ -16,17 +16,57 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  overflow: scroll;
+  scrollbar-width: none; /* Для Firefox */
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
+  display: block;
+  align-self: center;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: #434455;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+main {
+  margin-top: 48px;
+  min-height: 100vh;
+}
+
+ul,
+li {
+  list-style: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 main {
   flex-grow: 1;
 }
+
 main:has(.back-link) {
   text-align: center;
 }

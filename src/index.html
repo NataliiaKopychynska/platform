@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg" href="./public/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search IMG</title>
+    <title>Home</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -17,54 +17,161 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      <form id="searchForm" class="feedback-form">
-        <label class="label-form">
-          <input
-            id="searchInput"
-            class="input-form"
-            type="text"
-            name="text"
-            autofocus
-            placeholder="Search images..."
-          />
-        </label>
-
-        <button type="submit" class="button">Search</button>
-      </form>
-      <div class="loading-indicator">Loading images, please wait...</div>
-      <div id="app">
-        <ul class="gallery"></ul>
-
-        <!-- <button
-          id="load-more"
-          style="display: none"
-          class="js-load-more button load-more-hiden"
-        >
-          Load more
-        </button> -->
-        <div class="button-container">
-          <button class="js-load-more button btn-load-more load-more-hiden">
-            Load more
-          </button>
-          <p
-            class="no-more-images-message load-more-hiden"
-            style="display: none"
-          >
-            No more images available
-          </p>
+      <section class="baner">
+        <div class="div-baner">
+          <svg class="logo-hero">
+            <use
+              href="./img/icon-platform.svg#icon-logo-platform"
+              class="logo-hero-use"
+            ></use>
+          </svg>
+          <h1 class="hero-qwo">
+            Multifunctional Platform for Movie Enthusiasts and Creative
+            Individuals
+          </h1>
         </div>
-      </div>
-    </main>
+        <svg class="arrow-circle">
+          <use href="./img/icon-platform.svg#icon-arrow-circle"></use>
+        </svg>
+      </section>
+      <section>
+        <div class="top-movie-section">
+          <div class="scrollable-container">
+            <img
+              class="search-movie-img"
+              src="./img/baner-2a.jpg"
+              alt="Men show movie"
+            />
+          </div>
+          <div class="container-shoe-movie">
+            <div class="title-show-movie-h2">
+              <div class="title-show-movie">
+                <h2>
+                  Check out the movies everyone is talking about this week!
+                </h2>
+                <p class="modyficate-p">
+                  Discover the most exciting premieres that have already
+                  captured thousands of views and sparked discussions. We've
+                  curated a list of the top-rated films so you can pick the ones
+                  worth your attention.
+                </p>
+                <h3>
+                  Ratings, trailers, and short reviews – all in one place.
+                </h3>
+                <p>
+                  Don’t miss the chance to stay updated on the best cinematic
+                  events of the week!
+                </p>
+                <div class="btn-a">
+                  <a class="link-btn-title" href="./popular-movie.html"
+                    >Watch Now
+                  </a>
+                  <svg class="btn-icon">
+                    <use href="./img/icon-platform.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </div>
 
+              <div class="gallery-container">
+                <ul class="gallery-top-movie gallery-top-movie-js"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="baner-gallery">
+        <div class="container-gallery-section">
+          <div class="container-quote-gallery">
+            <svg class="icon-quote icon-quote-start">
+              <use href="./img/icon-platform.svg#icon-paws"></use>
+            </svg>
+            <p class="quote-tittle">
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+              esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+              fugiat quo voluptas nulla pariatur
+            </p>
+            <svg class="icon-quote icon-quote-end">
+              <use href="./img/icon-platform.svg#icon-paws"></use>
+            </svg>
+          </div>
+          <div class="gallery-container-home">
+            <h2 class="titile-under-quote">
+              The best visuals from The platform
+            </h2>
+            <ul class="list-gallery-home">
+              <li class="card-foto-info-gallery">
+                <img class="image" src="./img/img-card/picture 2.jpg" alt="" />
+                <div class="image-info image-info-home">
+                  <p class="paragraf-text">
+                    <span class="span-text">Likes:</span> 1813
+                  </p>
+                  <p class="paragraf-text">
+                    <span class="span-text">Views:</span> 900267
+                  </p>
+                  <p class="paragraf-text">
+                    <span class="span-text">Comments:</span> 232
+                  </p>
+                  <p class="paragraf-text">
+                    <span class="span-text">Downloads:</span> 789
+                  </p>
+                </div>
+              </li>
+              <li class="card-foto-info-gallery">
+                <img class="image" src="./img/img-card/picture 3.jpg" alt="" />
+                <div class="image-info image-info-home">
+                  <p class="paragraf-text">
+                    <span class="span-text">Likes:</span> 745
+                  </p>
+                  <p class="paragraf-text">
+                    <span class="span-text">Views:</span> 679334
+                  </p>
+                  <p class="paragraf-text">
+                    <span class="span-text">Comments:</span> 890
+                  </p>
+                  <p class="paragraf-text">
+                    <span class="span-text">Downloads:</span> 376409
+                  </p>
+                </div>
+              </li>
+              <li class="card-foto-info-gallery">
+                <img class="image" src="./img/img-card/image.jpg" alt="" />
+                <div class="image-info image-info-home">
+                  <p class="paragraf-text">
+                    <span class="span-text">Likes:</span> 789
+                  </p>
+                  <p class="paragraf-text">
+                    <span class="span-text">Views:</span> 6537
+                  </p>
+                  <p class="paragraf-text">
+                    <span class="span-text">Comments:</span> 679
+                  </p>
+                  <p class="paragraf-text">
+                    <span class="span-text">Downloads:</span> 8045
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <load
+      src="./partials/manu.html"
+      icon-path="img/icon-platform.svg#icon-logo-platform"
+    />
     <load src="./partials/footer.html" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
-    <script type="module" src="./main.js"></script>
-    <script type="module" src="./js/pixabay-api.js"></script>
-    <script type="module" src="./js/render-function.js"></script>
+    <script type="module" src="./js/home/main.js"></script>
   </body>
+  <div class="modal-overlay modall-hiden"></div>
 </html>

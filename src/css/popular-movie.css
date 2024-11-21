@@ -1,0 +1,102 @@
+.movie-list {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1144px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 24px;
+  list-style-type: none;
+}
+
+.movie-card {
+  /* border-radius: 12px; */
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover,
+.movie-card:focus {
+  transform: scale(1.05);
+}
+
+.poster-movie {
+  height: 400px;
+  width: 266px;
+  /* border-radius: 12px 12px 0px 0px; */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-info {
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  margin: 0 auto;
+  padding: 0;
+  padding: 8px 14px 14px 14px;
+  color: #5a5a5a;
+}
+.name-movie {
+  font-size: 20px;
+  text-align: start;
+  width: 234px;
+  min-height: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+  color: #141414;
+}
+.replase-data,
+.ratin-movie {
+  font-style: italic;
+  text-align: start;
+  width: 234px;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 16px; */
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  padding: 0 auto;
+}
+
+.movie-card:hover,
+.movie-card:focus {
+  /* width: 376px;
+  height: 208px; */
+  transform: scale(1.05);
+}
+
+.learn-more-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* На всю ширину картки */
+  height: 400px; /* На всю висоту картки */
+  background-color: rgba(0, 0, 0, 0.75); /* Напівпрозорий фон */
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden; /* Приховує кнопку */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.movie-card:hover .learn-more-button,
+.movie-card:focus .learn-more-button {
+  opacity: 1;
+  visibility: visible; /* Робить кнопку видимою при наведенні */
+}
+
+.btn-load-movie {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}

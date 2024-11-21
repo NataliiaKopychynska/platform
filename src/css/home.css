@@ -1,0 +1,318 @@
+/* ----------------------SECTION HERO-------------------------- */
+
+.baner {
+  margin: 0 auto;
+
+  height: 90vh;
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/baner-1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: visible;
+}
+
+.div-baner {
+  padding-top: 160px;
+  /* margin: 0 auto; */
+  /* padding: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  /* position: absolute; */
+  /* top: 20%; */
+  /* left: 14%; */
+  /* transform: translateX(-600px); */
+  /* transform: translateY(-600); */
+}
+
+.logo-hero {
+  width: 800px;
+  fill: #ff5722;
+}
+
+.hero-qwo {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.33333;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #f2f2f7;
+}
+
+.arrow-circle {
+  fill: #ff5722;
+  margin: 0 auto;
+  width: 220px; /* Ширина іконки */
+  height: 220px;
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50px);
+  animation: moveUpDown 2s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50px);
+  }
+}
+
+/* --------------------------SECTION TOP MOVIE---------------------------- */
+.top-movie-section {
+  margin: 0 auto;
+
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.scrollable-container {
+  border-radius: 8px;
+  width: 552px;
+  height: 660px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-movie-img {
+}
+
+.container-shoe-movie {
+}
+
+.title-show-movie-h2 {
+  width: 550px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title-show-movie {
+  gap: 8px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.modyficate-p {
+  margin-bottom: 8px;
+}
+.btn-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4px;
+  border-radius: 4px;
+  padding: 4px 8px 4px 0;
+  /* width: 82px; */
+  height: 24px;
+}
+
+.btn-a:hover,
+.btn-a:focus {
+  scale: 1.05;
+}
+.btn-a:hover > .link-btn-title,
+.btn-a:hover > .btn-icon {
+  color: #ff5722;
+  fill: #ff5722;
+}
+
+.link-btn-title {
+  font-weight: 600;
+  font-size: 12px;
+
+  /* line-height: 16px; */
+  line-height: 1.33333;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #424242;
+}
+.btn-icon {
+  fill: #424242;
+  width: 16px;
+  height: 16px;
+}
+/* ---------------movies-------------- */
+
+.gallery-container {
+  width: 552px; /* Фіксована ширина */
+  overflow-x: auto; /* Горизонтальний скрол */
+  overflow-y: hidden; /* Приховує вертикальний скрол */
+  white-space: nowrap; /* Зображення розташовуються в ряд */
+  padding: 8px;
+  scrollbar-width: none;
+}
+.gallery-top-movie {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+}
+.poster-home {
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-card-home {
+  flex-shrink: 0;
+
+  width: 180px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.movie-card-home:hover,
+.movie-card-home:focus {
+  border-radius: 8px;
+  transform: scale(1.05);
+}
+
+.movie-info-home {
+  margin: 0 auto;
+  padding: 0;
+  padding: 8px 4px 8px 4px;
+  color: #5a5a5a;
+}
+.name-movie-home {
+  font-size: 16px;
+  text-align: start;
+  width: 234px;
+  min-height: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+  color: #141414;
+}
+.learn-more-button-home {
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* На всю ширину картки */
+  height: 270px; /* На всю висоту картки */
+  background-color: rgba(0, 0, 0, 0.75); /* Напівпрозорий фон */
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden; /* Приховує кнопку */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.movie-card-home:hover .learn-more-button-home,
+.movie-card-home:focus .learn-more-button-home {
+  opacity: 1;
+  visibility: visible; /* Робить кнопку видимою при наведенні */
+}
+
+/* -----------------GALLERY------------------- */
+
+.baner-gallery {
+  /* margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0; */
+  /* width: 100vh; */
+  background-image: url('../img/baner-3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-attachment: scroll;
+  /* background-position: center;
+  position: relative;
+  overflow: visible; */
+  margin-top: 160px;
+}
+
+.container-gallery-section {
+  padding-top: 200px;
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 136px;
+}
+.container-quote-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 48px;
+}
+.icon-quote {
+  fill: #ff5722;
+  width: 76px;
+  height: 66px;
+}
+.icon-quote-start {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+.quote-tittle {
+  margin-top: 56px;
+  width: 568px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+
+  /* line-height: 24px; */
+  line-height: 1.71429;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+}
+.icon-quote-end {
+  margin-top: 90px;
+}
+.gallery-container-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.titile-under-quote {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+}
+.container-single-galery-obj {
+}
+.list-gallery-home {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+}
+.card-foto-info-gallery {
+  width: 360px;
+}
+
+.image-info-home {
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-bottom: 1 px solid #808080;
+}

@@ -16,5 +16,13 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+@import url('./manu.css');
+
+@import url('./parts/crumbs.css');
+@import url('./parts/modal.css');
+
+/* gallery */
 @import url('./form.css');
 @import url('./gallery.css');
+@import url('./home.css');
+@import url('./popular-movie.css');

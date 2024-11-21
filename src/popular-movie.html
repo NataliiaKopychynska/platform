@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <load
+      src="./partials/manu.html"
+      icon-path="img/icon-platform.svg#icon-logo-platform"
+    />
+
+    <main>
+      <div class="crumbs">
+        <a href="./index.html" class="title-crmbs disabled-crumbs">Home</a>
+        <svg class="crbs-icon">
+          <use href="./img/icon-platform.svg#icon-arrow"></use>
+        </svg>
+        <a href="" class="title-crmbs activ-crambs">Movie</a>
+      </div>
+      <h1 class="herou-main">Show popular movie</h1>
+
+      <section class="section-13-movie-list">
+        <div id="app">
+          <ul class="js-movie-list movie-list"></ul>
+          <div class="button-container">
+            <button class="js-load-more btn-load-movie load-more-hiden">
+              Load more
+            </button>
+          </div>
+        </div>
+      </section>
+      <script type="module" src="./js/movie/main.js"></script>
+    </main>
+    <footer>
+      <load src="./partials/footer.html" />
+    </footer>
+  </body>
+
+  <div class="modal-overlay modall-hiden"></div>
+</html>

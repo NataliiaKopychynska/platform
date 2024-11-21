@@ -1,0 +1,46 @@
+.crumbs {
+  margin: 0 auto;
+  margin-top: 8px;
+  width: 1130px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.title-crmbs {
+  padding: 8px 0;
+  font-weight: 400;
+  font-size: 10px;
+
+  /* line-height: 16px; */
+  line-height: 1.6;
+}
+
+.activ-crambs {
+  color: #a6a6a6;
+}
+
+.disabled-crumbs {
+  color: #303030;
+}
+.crbs-icon {
+  width: 12px;
+  height: 12px;
+  fill: #a6a6a6;
+}
+
+.herou-main {
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  width: 1130px;
+  font-weight: 600;
+  font-size: 26px;
+
+  /* line-height: 32px; */
+  line-height: 1.23077;
+  letter-spacing: -0.01em;
+  color: #1a1a1a;
+}
