@@ -1,6 +1,6 @@
-import '../../css/styles.css';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import '../../css/styles.css';
 
 export function renderImages(images, clearGallery = false) {
   const gallery = document.querySelector('.gallery');
@@ -34,7 +34,6 @@ export function renderImages(images, clearGallery = false) {
     gallery.appendChild(card);
   });
 
-  // Update SimpleLightbox after adding new images
   const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionPosition: 'bottom',
@@ -42,7 +41,6 @@ export function renderImages(images, clearGallery = false) {
   });
 }
 
-// Clear the gallery
 export function clearGallery() {
   document.querySelector('.gallery').innerHTML = '';
 }
@@ -56,10 +54,6 @@ export function renderError(message) {
   });
 }
 
-// export function showLoadingIndicator(show) {
-//   const loadingIndicator = document.querySelector('.loading-indicator');
-//   loadingIndicator.style.display = show ? 'block' : 'none';
-// }
 export function showLoadingIndicator() {
   document.querySelector('.loading-indicator').style.display = 'flex';
 }
@@ -76,11 +70,7 @@ export function showLoadMoreButton() {
   // EndLoadText.classList.classList.add('load-more-hiden');
 }
 
-// Функція для приховування кнопки "Load more"
 export function hideLoadMoreButton() {
   const loadMoreButton = document.querySelector('.js-load-more');
   loadMoreButton.classList.add('load-more-hiden');
-
-  // const EndLoadText = document.querySelector('.no-more-images-message');
-  // EndLoadText.classList.classList.remove('load-more-hiden');
 }

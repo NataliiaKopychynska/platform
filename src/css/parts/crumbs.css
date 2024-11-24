@@ -20,11 +20,18 @@
 
 .activ-crambs {
   color: #a6a6a6;
+  cursor: default;
 }
 
 .disabled-crumbs {
   color: #303030;
 }
+
+.disabled-crumbs:hover,
+.disabled-crumbs:focus {
+  color: #f44336;
+}
+
 .crbs-icon {
   width: 12px;
   height: 12px;

@@ -1,6 +1,4 @@
 import '../../css/styles.css';
-
-// pixabay-api.js
 import axios from 'axios';
 
 const API_KEY = '46929874-64df5169043d6b6fbb8fb2b93';

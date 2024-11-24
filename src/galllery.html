@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg" href="./public/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
 
@@ -37,7 +38,7 @@
       </div>
       <h1 class="herou-main">Your inspiration</h1>
       <form id="searchForm" class="feedback-form">
-        <label class="label-form">
+        <label id="src" class="label-form">
           <input
             id="searchInput"
             class="input-form"
@@ -51,7 +52,7 @@
         <button type="submit" class="button">Search</button>
       </form>
       <div class="loading-indicator">Loading images, please wait...</div>
-      <div id="app">
+      <div>
         <ul class="gallery"></ul>
 
         <!-- <button

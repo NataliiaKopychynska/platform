@@ -30,7 +30,7 @@
 .icon-burger {
   width: 24px;
   height: 24px;
-  margin-top: 12px;
+  margin-top: 14px;
   fill: aliceblue;
 }
 .nav-header {
@@ -39,6 +39,7 @@
   justify-content: space-between;
   align-items: center;
   color: aliceblue;
+  /* margin-top: 14px; */
 }
 
 .nav-logo-icon {

@@ -1,0 +1,46 @@
+.pp-update-date {
+}
+.pp-title {
+  font-weight: 300;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  /* text-align: center; */
+  color: #575757;
+}
+.pp-title-div {
+  margin: 0 auto;
+  margin-top: 8px;
+  width: 1130px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  text-align: justify;
+}
+
+.pp-div {
+  margin: 0 auto;
+  margin-top: 8px;
+  width: 1130px;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  text-align: justify;
+}
+.pp-extra {
+  padding-bottom: 160px;
+}
+.line-pp {
+  margin: 0 auto;
+  width: 90vh;
+  height: 1px;
+  background-color: #bebebe;
+  margin-top: 80px;
+  margin-bottom: 24px;
+}

@@ -13,7 +13,9 @@
 
 .movie-card {
   /* border-radius: 12px; */
+  border: 1px solid #808080;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -32,9 +34,9 @@
 }
 
 .movie-info {
-  border-bottom: 1px solid #808080;
+  /* border-bottom: 1px solid #808080;
   border-left: 1px solid #808080;
-  border-right: 1px solid #808080;
+  border-right: 1px solid #808080; */
   margin: 0 auto;
   padding: 0;
   padding: 8px 14px 14px 14px;

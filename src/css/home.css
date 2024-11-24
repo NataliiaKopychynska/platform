@@ -243,11 +243,12 @@
   /* background-position: center;
   position: relative;
   overflow: visible; */
+  padding-top: 160px;
   margin-top: 160px;
 }
 
 .container-gallery-section {
-  padding-top: 200px;
+  padding-top: 0px;
   padding-bottom: 160px;
   display: flex;
   flex-direction: column;
@@ -308,11 +309,19 @@
   gap: 24px;
 }
 .card-foto-info-gallery {
+  border: 1px solid #808080;
   width: 360px;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-foto-info-gallery:hover,
+.card-foto-info-gallery:focus {
+  transform: scale(1.1);
 }
 
 .image-info-home {
-  border-left: 1px solid #808080;
+  /* border: 1px solid #808080;
   border-right: 1px solid #808080;
-  border-bottom: 1 px solid #808080;
+  border-bottom: 1 px solid #808080; */
 }

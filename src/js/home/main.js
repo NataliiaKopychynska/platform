@@ -70,25 +70,12 @@ export function fetchMoviIdHome(movieId) {
 containerMowieHome.addEventListener('click', onLearnMoreClick);
 
 function onLearnMoreClick(evt) {
-  // Шукаємо найближчий елемент з класом 'learn-more-button'
   const button = evt.target.closest('.learn-more-button-home');
   console.log(button);
-
-  // Якщо кнопка не знайдена, виходимо з функції
   if (!button) return;
-
-  // Отримуємо ID фільму з data-id
   const movieId = button.dataset.id;
-
-  // Очищаємо вміст модального вікна
   modalContainerHome.innerHTML = '';
-
-  // Показуємо модальне вікно
   modalContainerHome.classList.remove('modall-hiden');
-
-  // Викликаємо функцію для отримання даних фільму
   fetchMoviIdHome(movieId);
-
-  // Виводимо ID фільму в консоль
   console.log(movieId);
 }

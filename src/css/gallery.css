@@ -64,6 +64,9 @@
 
 .gallery-item {
   border: 1px solid #808080;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
 }
 
 .gallery-item:hover,
@@ -88,3 +91,8 @@
 
   display: none;
 }
+
+/* .sl-overlay {
+  background-image: url('../img/background.png') no-repeat center center;
+  background-size: cover;
+} */

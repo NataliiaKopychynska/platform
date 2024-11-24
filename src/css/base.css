@@ -70,3 +70,29 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  /* width: 95px; */
+  height: 40px;
+  background: #929292;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.button:hover {
+  /* background: #494949; */
+  background-color: #f44336;
+}

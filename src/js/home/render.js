@@ -21,6 +21,7 @@ export function modalMarkupHome({
   release_date,
   original_title,
   vote_average,
+  overview,
 }) {
   return `
       <div class="modal-title-movie">
@@ -29,6 +30,7 @@ export function modalMarkupHome({
           <img class="img-modal" src="https://image.tmdb.org/t/p/w500/${poster_path}" alt="${original_title}">
           <div class="container-title-modal">
             <h2>${original_title}</h2>
+            <p>${overview}</p>
             <p><strong>Дата виходу:</strong> ${release_date}</p>
             <p><strong>Рейтинг:</strong> ${vote_average}</p>
           </div>
