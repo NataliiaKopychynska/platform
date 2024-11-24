@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg" href="/platform/assets/logo-CY0g5G9L.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/platform/popular-movie.js"></script>
+    <link rel="modulepreload" crossorigin href="/platform/assets/manu-BKy-hVqk.js">
+    <link rel="modulepreload" crossorigin href="/platform/assets/vendor-Kt0AZ5QJ.js">
+    <link rel="stylesheet" crossorigin href="/platform/assets/vendor-DkczhqSJ.css">
+    <link rel="stylesheet" crossorigin href="/platform/assets/styles-BrFINCyw.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-container">
+    <nav class="nav-header">
+      <div class="navigation-header">
+        <svg class="icon-burger">
+          <use
+            href="../img/icon-platform.svg#icon-burger"
+            width="20"
+            height="20"
+          ></use>
+        </svg>
+        <a class="nav-logo" href="./index.html" aria-label="Site logo">
+          <svg class="nav-logo-icon">
+            <use href="../img/icon-platform.svg#icon-logo-platform"></use>
+          </svg>
+        </a>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link {=$highlight-act}" href="../privacy-police.html"
+            >Privacy policy</a
+          >
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        </li> -->
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="menu-container menu-hidden">
+  <!-- <div class="options-container" data-url="../dashboard.html">
+    <svg class="menu-icon">
+      <use
+        href="../img/icon-platform.svg#icon-home"
+        width="24px"
+        height="24px"
+      ></use>
+    </svg>
+    <p class="title-option-menu">Dashboard</p>
+  </div> -->
+  <div class="options-container" data-url="../popular-movie.html">
+    <svg class="menu-icon">
+      <use
+        href="../img/icon-platform.svg#icon-movie"
+        width="24px"
+        height="24px"
+      ></use>
+    </svg>
+    <p class="title-option-menu">Popular movie</p>
+  </div>
+  <div class="options-container" data-url="../galllery.html">
+    <svg class="menu-icon icon-gallery">
+      <use
+        href="../img/icon-platform.svg#icon-gallery"
+        width="24px"
+        height="24px"
+      ></use>
+    </svg>
+    <p class="title-option-menu">Gallery</p>
+  </div>
+</div>
+
+
+    <main>
+      <div class="crumbs">
+        <a href="./index.html" class="title-crmbs disabled-crumbs">Home</a>
+        <svg class="crbs-icon">
+          <use href="/platform/assets/icon-platform-CRSUlO2c.svg#icon-arrow"></use>
+        </svg>
+        <a href="" class="title-crmbs activ-crambs">Movie</a>
+      </div>
+      <h1 class="herou-main">Show popular movie</h1>
+
+      <section class="section-13-movie-list">
+        <div id="app">
+          <ul class="js-movie-list movie-list"></ul>
+          <div class="button-container">
+            <button class="js-load-more btn-load-movie load-more-hiden">
+              Load more
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <footer class="footer">
+  <div class="container extra-container">
+    <div class="contact-div">
+      <p class="p-contact">
+        Phone:<a href="+48 223 456 789" class="a-contact">+48 223 456 789</a>
+      </p>
+      <p class="p-contact">
+        E-mail:<a href="" class="a-contact">adress@email.com</a>
+      </p>
+    </div>
+    <div class="page-scrol-container">
+      <!-- <a href="../index.html" class="a-contact a-contact-up">Scroll up</a> -->
+      <a href="../privacy-police.html" class="a-contact a-contact-up"
+        >Privacy policy</a
+      >
+      <a href="../popular-movie.html" class="a-contact a-contact-up"
+        >popular movie</a
+      >
+      <a href="../galllery.html" class="a-contact a-contact-up">search jpg</a>
+    </div>
+  </div>
+  <div class="container">
+    <p class="footer-desc">
+      Made with ✨ by
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/nataliia-kopychynska-72992b266/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Nataliia Kopychynska
+      </a>
+    </p>
+  </div>
+</footer>
+
+    </footer>
+  </body>
+
+  <div class="modal-overlay modall-hiden"></div>
+</html>

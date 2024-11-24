@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/platform/favicon.svg" />
+    <link rel="icon" type="image/svg" href="/platform/assets/logo-CY0g5G9L.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search IMG</title>
+    <title>Home</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -16,27 +16,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/platform/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/platform/assets/manu-BKy-hVqk.js">
     <link rel="modulepreload" crossorigin href="/platform/assets/vendor-Kt0AZ5QJ.js">
     <link rel="stylesheet" crossorigin href="/platform/assets/vendor-DkczhqSJ.css">
-    <link rel="stylesheet" crossorigin href="/platform/assets/styles-CJCtrhHy.css">
+    <link rel="stylesheet" crossorigin href="/platform/assets/styles-BrFINCyw.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/platform/assets/sprite-E8vg0sBb.svg#logo"></use>
+  <div class="header-container">
+    <nav class="nav-header">
+      <div class="navigation-header">
+        <svg class="icon-burger">
+          <use
+            href="../img/icon-platform.svg#icon-burger"
+            width="20"
+            height="20"
+          ></use>
         </svg>
-      </a>
+        <a class="nav-logo" href="./index.html" aria-label="Site logo">
+          <svg class="nav-logo-icon">
+            <use href="../img/icon-platform.svg#icon-logo-platform"></use>
+          </svg>
+        </a>
+      </div>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+          <a class="nav-link {=$highlight-act}" href="../privacy-police.html"
+            >Privacy policy</a
+          >
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </div>
@@ -44,52 +62,218 @@
 
 
     <main>
-      <form id="searchForm" class="feedback-form">
-        <label class="label-form">
-          <input
-            id="searchInput"
-            class="input-form"
-            type="text"
-            name="text"
-            autofocus
-            placeholder="Search images..."
-          />
-        </label>
-
-        <button type="submit" class="button">Search</button>
-      </form>
-      <div class="loading-indicator">Loading images, please wait...</div>
-      <div id="app">
-        <ul class="gallery"></ul>
-
-        <!-- <button
-          id="load-more"
-          style="display: none"
-          class="js-load-more button load-more-hiden"
-        >
-          Load more
-        </button> -->
-        <div class="button-container">
-          <button class="js-load-more button btn-load-more load-more-hiden">
-            Load more
-          </button>
-          <p
-            class="no-more-images-message load-more-hiden"
-            style="display: none"
-          >
-            No more images available
-          </p>
+      <section class="baner">
+        <div class="div-baner">
+          <svg class="logo-hero">
+            <use
+              href="/platform/assets/icon-platform-CRSUlO2c.svg#icon-logo-platform"
+              class="logo-hero-use"
+            ></use>
+          </svg>
+          <h1 class="hero-qwo">
+            Multifunctional Platform for Movie Enthusiasts and Creative
+            Individuals
+          </h1>
         </div>
-      </div>
+        <svg class="arrow-circle">
+          <use href="/platform/assets/icon-platform-CRSUlO2c.svg#icon-arrow-circle"></use>
+        </svg>
+      </section>
+      <section>
+        <div class="top-movie-section">
+          <div class="scrollable-container">
+            <img
+              class="search-movie-img"
+              src="/platform/assets/baner-2a-BZAbfg77.jpg"
+              alt="Men show movie"
+            />
+          </div>
+          <div class="container-shoe-movie">
+            <div class="title-show-movie-h2">
+              <div class="title-show-movie">
+                <h2>
+                  Check out the movies everyone is talking about this week!
+                </h2>
+                <p class="modyficate-p">
+                  Discover the most exciting premieres that have already
+                  captured thousands of views and sparked discussions. We've
+                  curated a list of the top-rated films so you can pick the ones
+                  worth your attention.
+                </p>
+                <h3>
+                  Ratings, trailers, and short reviews – all in one place.
+                </h3>
+                <p>
+                  Don’t miss the chance to stay updated on the best cinematic
+                  events of the week!
+                </p>
+                <div class="btn-a">
+                  <a class="link-btn-title" href="./popular-movie.html"
+                    >Watch Now
+                  </a>
+                  <svg class="btn-icon">
+                    <use href="/platform/assets/icon-platform-CRSUlO2c.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="gallery-container">
+                <ul class="gallery-top-movie gallery-top-movie-js"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="baner-gallery">
+        <div class="container-gallery-section">
+          <div class="container-quote-gallery">
+            <svg class="icon-quote icon-quote-start">
+              <use href="/platform/assets/icon-platform-CRSUlO2c.svg#icon-paws"></use>
+            </svg>
+            <p class="quote-tittle">
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+              esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+              fugiat quo voluptas nulla pariatur
+            </p>
+            <svg class="icon-quote icon-quote-end">
+              <use href="/platform/assets/icon-platform-CRSUlO2c.svg#icon-paws"></use>
+            </svg>
+          </div>
+          <div class="gallery-container-home">
+            <h2 class="titile-under-quote">
+              The best visuals from The platform:
+            </h2>
+            <ul class="list-gallery-home">
+              <li class="card-foto-info-gallery">
+                <a href="./galllery.html">
+                  <img
+                    class="image"
+                    src="/platform/assets/picture%202-CuXTUCK_.jpg"
+                    alt=""
+                  />
+                  <div class="image-info image-info-home">
+                    <p class="paragraf-text">
+                      <span class="span-text">Likes:</span> 1813
+                    </p>
+                    <p class="paragraf-text">
+                      <span class="span-text">Views:</span> 900267
+                    </p>
+                    <p class="paragraf-text">
+                      <span class="span-text">Comments:</span> 232
+                    </p>
+                    <p class="paragraf-text">
+                      <span class="span-text">Downloads:</span> 789
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="card-foto-info-gallery">
+                <a href="./galllery.html">
+                  <img
+                    class="image"
+                    src="/platform/assets/picture%203-DSm6yDT2.jpg"
+                    alt=""
+                  />
+                  <div class="image-info image-info-home">
+                    <p class="paragraf-text">
+                      <span class="span-text">Likes:</span> 745
+                    </p>
+                    <p class="paragraf-text">
+                      <span class="span-text">Views:</span> 679334
+                    </p>
+                    <p class="paragraf-text">
+                      <span class="span-text">Comments:</span> 890
+                    </p>
+                    <p class="paragraf-text">
+                      <span class="span-text">Downloads:</span> 376409
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="card-foto-info-gallery">
+                <a href="./galllery.html">
+                  <img class="image" src="/platform/assets/image-BJ4h5Ni0.jpg" alt="" />
+                  <div class="image-info image-info-home">
+                    <p class="paragraf-text">
+                      <span class="span-text">Likes:</span> 789
+                    </p>
+                    <p class="paragraf-text">
+                      <span class="span-text">Views:</span> 6537
+                    </p>
+                    <p class="paragraf-text">
+                      <span class="span-text">Comments:</span> 679
+                    </p>
+                    <p class="paragraf-text">
+                      <span class="span-text">Downloads:</span> 8045
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
+    <div class="menu-container menu-hidden">
+  <!-- <div class="options-container" data-url="../dashboard.html">
+    <svg class="menu-icon">
+      <use
+        href="../img/icon-platform.svg#icon-home"
+        width="24px"
+        height="24px"
+      ></use>
+    </svg>
+    <p class="title-option-menu">Dashboard</p>
+  </div> -->
+  <div class="options-container" data-url="../popular-movie.html">
+    <svg class="menu-icon">
+      <use
+        href="../img/icon-platform.svg#icon-movie"
+        width="24px"
+        height="24px"
+      ></use>
+    </svg>
+    <p class="title-option-menu">Popular movie</p>
+  </div>
+  <div class="options-container" data-url="../galllery.html">
+    <svg class="menu-icon icon-gallery">
+      <use
+        href="../img/icon-platform.svg#icon-gallery"
+        width="24px"
+        height="24px"
+      ></use>
+    </svg>
+    <p class="title-option-menu">Gallery</p>
+  </div>
+</div>
 
     <footer class="footer">
+  <div class="container extra-container">
+    <div class="contact-div">
+      <p class="p-contact">
+        Phone:<a href="+48 223 456 789" class="a-contact">+48 223 456 789</a>
+      </p>
+      <p class="p-contact">
+        E-mail:<a href="" class="a-contact">adress@email.com</a>
+      </p>
+    </div>
+    <div class="page-scrol-container">
+      <!-- <a href="../index.html" class="a-contact a-contact-up">Scroll up</a> -->
+      <a href="../privacy-police.html" class="a-contact a-contact-up"
+        >Privacy policy</a
+      >
+      <a href="../popular-movie.html" class="a-contact a-contact-up"
+        >popular movie</a
+      >
+      <a href="../galllery.html" class="a-contact a-contact-up">search jpg</a>
+    </div>
+  </div>
   <div class="container">
     <p class="footer-desc">
       Made with ✨ by
       <a
         class="footer-link"
-        href="https://goit.global/ua/"
+        href="https://www.linkedin.com/in/nataliia-kopychynska-72992b266/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -99,6 +283,6 @@
   </div>
 </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
   </body>
+  <div class="modal-overlay modall-hiden"></div>
 </html>

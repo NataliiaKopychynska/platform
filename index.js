@@ -1,8 +1,26 @@
-/* empty css                      */import{a as g,S as y}from"./assets/vendor-Kt0AZ5QJ.js";(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))a(e);new MutationObserver(e=>{for(const o of e)if(o.type==="childList")for(const s of o.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&a(s)}).observe(document,{childList:!0,subtree:!0});function n(e){const o={};return e.integrity&&(o.integrity=e.integrity),e.referrerPolicy&&(o.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?o.credentials="include":e.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function a(e){if(e.ep)return;e.ep=!0;const o=n(e);fetch(e.href,o)}})();const h="46929874-64df5169043d6b6fbb8fb2b93";async function p(t,r=1){const n=`https://pixabay.com/api/?key=${h}&q=${t}&image_type=photo&orientation=horizontal&safesearch=true&page=${r}&per_page=15`;try{return(await g.get(n)).data.hits}catch(a){return console.error("Error fetching images:",a),[]}}function f(t,r=!1){const n=document.querySelector(".gallery");r&&(n.innerHTML=""),t.forEach(a=>{const e=document.createElement("a");e.href=a.largeImageURL,e.classList.add("gallery-item");const o=document.createElement("img");o.src=a.webformatURL,o.alt=a.tags,o.classList.add("image");const s=document.createElement("div");s.classList.add("image-info"),s.innerHTML=`
-      <p class="paragraf-text"><span class="span-text">Likes:</span> ${a.likes}</p>
-      <p class="paragraf-text"><span class="span-text">Views:</span> ${a.views}</p>
-      <p class="paragraf-text"><span class="span-text">Comments:</span> ${a.comments}</p>
-      <p class="paragraf-text"><span class="span-text">Downloads:</span> ${a.downloads}</p>
-    `,e.appendChild(o),e.appendChild(s),n.appendChild(e)}),new y(".gallery a",{captionsData:"alt",captionPosition:"bottom",captionDelay:250})}function L(){document.querySelector(".gallery").innerHTML=""}function c(t){iziToast.error({title:"Error",message:t,position:"topRight",timeout:5e3})}function w(){document.querySelector(".loading-indicator").style.display="flex"}function I(){document.querySelector(".loading-indicator").style.display="none"}function b(){document.querySelector(".js-load-more").classList.remove("load-more-hiden")}function d(){document.querySelector(".js-load-more").classList.add("load-more-hiden")}const q=document.getElementById("searchForm"),m=document.getElementById("searchInput"),E=document.querySelector(".js-load-more");let l=1,i="",u=0;E.addEventListener("click",S);q.addEventListener("submit",async t=>{t.preventDefault(),i=m.value.trim(),l=1;//!
-if(u=0,!i){c("Please enter a search query.");return}L(),w();try{const r=await p(i,l);r.length===0?(c("Sorry, there are no images matching your search query. Please try again."),d()):(f(r,!0),u+=r.length,r.length<15?d():b())}catch{c("An error occurred while fetching images. Please try again later.")}finally{I()}m.value=""});async function S(){l+=1;try{const t=await p(i,l);f(t,!1),u+=t.length,x(),t.length<15&&d()}catch{c("An error occurred while fetching more images. Please try again later.")}}function x(){const r=document.querySelector(".gallery").querySelector("img");if(r){const n=r.offsetHeight;window.scrollBy({top:n*2,behavior:"smooth"})}}
+import"./assets/manu-BKy-hVqk.js";/* empty css                      */import{a as i}from"./assets/vendor-Kt0AZ5QJ.js";const r="https://api.themoviedb.org/3",l="/trending/movie/day",m="3305064ea972acdb0e395953537191ad";async function d(o=1){try{const{data:t}=await i(`${r}${l}`,{params:{api_key:m,page:o}});return console.log(t),t}catch(t){throw console.error("Помилка під час запиту:",t.message),t}}function h(o){return o.map(({poster_path:t,original_title:e,id:s})=>`
+      <li class=" movie-card-home">
+
+           <img class="poster-home" src="https://image.tmdb.org/t/p/w500/${t}" alt="${e}">
+           <div class="movie-info-home">
+               <h3 class="name-movie-home text-muvie-js">${e}</h3>
+
+           </div>
+           <button class="learn-more-button-home" data-id="${s}">Learn more</button>
+
+      </li>`).join("")}function u({poster_path:o,release_date:t,original_title:e,vote_average:s,overview:c}){return`
+      <div class="modal-title-movie">
+        <button class="modal-close">Закрити</button>
+        <div class="modal-content">
+          <img class="img-modal" src="https://image.tmdb.org/t/p/w500/${o}" alt="${e}">
+          <div class="container-title-modal">
+            <h2>${e}</h2>
+            <p>${c}</p>
+            <p><strong>Дата виходу:</strong> ${t}</p>
+            <p><strong>Рейтинг:</strong> ${s}</p>
+          </div>
+        </div>
+      </div>
+    
+    `}const a=document.querySelector(".gallery-top-movie-js");function p(o,t=20){const e=o.textContent;e.length>t&&(o.textContent=e.slice(0,t)+"...")}async function v(o){try{const t=await d(o);a.insertAdjacentHTML("beforeend",h(t.results)),document.querySelectorAll(".text-muvie-js").forEach(s=>p(s,18))}catch(t){alert(t.message)}}v();const n=document.querySelector(".modal-overlay");function g(o){const t={method:"GET",headers:{accept:"application/json",Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMzA1MDY0ZWE5NzJhY2RiMGUzOTU5NTM1MzcxOTFhZCIsIm5iZiI6MTczMTk2NDMxNy4yNzI0ODUsInN1YiI6IjY3MmUxNDJiYTgxODcxM2JkZjQ5NDliNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ujyy7e_t_8kU-Sxr8b1pFxTDQi8zc-bo3UZcavZtmkA"}};fetch(`https://api.themoviedb.org/3/movie/${o}`,t).then(e=>e.json()).then(e=>{n.innerHTML=u(e),console.log(e),n.querySelector(".modal-close").addEventListener("click",()=>{n.classList.add("modall-hiden")}),n.addEventListener("click",c=>{c.target===n&&n.classList.add("modall-hiden")})}).catch(e=>{throw console.error("Помилка під час запиту:",e.message),e})}a.addEventListener("click",y);function y(o){const t=o.target.closest(".learn-more-button-home");if(console.log(t),!t)return;const e=t.dataset.id;n.innerHTML="",n.classList.remove("modall-hiden"),g(e),console.log(e)}
 //# sourceMappingURL=index.js.map
