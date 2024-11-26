@@ -18,8 +18,8 @@ import"./assets/manu-BKy-hVqk.js";/* empty css                      */import{a a
           <div class="container-title-modal">
             <h2>${t}</h2>
             <p>${n}</p>
-            <p><strong>Дата виходу:</strong> ${e}</p>
-            <p><strong>Рейтинг:</strong> ${s}</p>
+            <p><strong>Release date: </strong> ${e}</p>
+            <p><strong>Rating: </strong> ${s}</p>
           </div>
         </div>
       </div>
