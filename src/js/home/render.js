@@ -31,8 +31,8 @@ export function modalMarkupHome({
           <div class="container-title-modal">
             <h2>${original_title}</h2>
             <p>${overview}</p>
-            <p><strong>Дата виходу:</strong> ${release_date}</p>
-            <p><strong>Рейтинг:</strong> ${vote_average}</p>
+            <p><strong>Release date:</strong> ${release_date}</p>
+            <p><strong>Rating: </strong> ${vote_average}</p>
           </div>
         </div>
       </div>
