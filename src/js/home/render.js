@@ -25,7 +25,7 @@ export function modalMarkupHome({
 }) {
   return `
       <div class="modal-title-movie">
-        <button class="modal-close">Закрити</button>
+        <button class="modal-close">x</button>
         <div class="modal-content">
           <img class="img-modal" src="https://image.tmdb.org/t/p/w500/${poster_path}" alt="${original_title}">
           <div class="container-title-modal">
