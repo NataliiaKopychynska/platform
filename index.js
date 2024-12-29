@@ -10,7 +10,7 @@ import"./assets/manu-BKy-hVqk.js";/* empty css                      */import{a a
 
       </li>`).join("")}function u({poster_path:o,release_date:e,original_title:t,vote_average:s,overview:a}){return`
       <div class="modal-title-movie">
-        <button class="modal-close">Закрити</button>
+        <button class="modal-close">x</button>
         <div class="modal-content">
           <img class="img-modal" src="https://image.tmdb.org/t/p/w500/${o}" alt="${t}">
           <div class="container-title-modal">
